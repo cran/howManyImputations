@@ -1,0 +1,8 @@
+35c5dff66ecea486575e4af5942b62ba *DESCRIPTION
+14072c281dce4f1e07c87da1bbaae0c1 *LICENSE
+4d244a2b326d0e297ec2de63876b93f2 *NAMESPACE
+3c2aef272d9c93cd80867517150888ea *NEWS.md
+d78ebb845236c4be0e4cc90a15f40c2b *R/how_many_imputations.R
+7055044ca5f8434e8dd77d77cae547e0 *man/how_many_imputations.Rd
+ebad4e6855cd05de68eabfd182d3cb68 *tests/testthat.R
+4617dc868cf5e9e250c218c62d50488d *tests/testthat/test-how_many_imputations.R
