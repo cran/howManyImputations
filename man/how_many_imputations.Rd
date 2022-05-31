@@ -2,15 +2,15 @@
 % Please edit documentation in R/how_many_imputations.R
 \name{how_many_imputations}
 \alias{how_many_imputations}
-\title{How Many Imputations?}
+\title{Implements two-stage "how_many_imputations" from von Hippel (2020)}
 \usage{
 how_many_imputations(model, cv = 0.05, alpha = 0.05)
 }
 \arguments{
 \item{model}{Either a \code{mira} object (created by running a model on a
-data set which was imputed using \code{mice}) or a \code{mipo} object
+data set which was imputed using \code{mice::mice()}) or a \code{mipo} object
 (creating by running \code{pool()} on a \code{mira} object), or any object
-which can be converted to \code{mira} via \code{as.mira}.}
+which can be converted to \code{mira} via \code{as.mira()}.}
 
 \item{cv}{Desired precision of standard errors. Default to .05. If the data
 were re-imputed, the estimated standard errors would differ by no more than
@@ -23,23 +23,21 @@ The number of required imputations to obtain the \code{cv} level of
   precision.
 }
 \description{
-Implements two-stage "how_many_imputations" from von Hippel (2018)
-}
-\details{
 The old advice of 5-10 imputations is sufficient for a point estimate (e.g.
 an estimated coefficient), but not for estimates of standard errors (and
 consequently, hypothesis tests or confidence intervals).
-
-von Hippel (2018) provides a way to calculate the number of imputations
+}
+\details{
+von Hippel (2020) provides a way to calculate the number of imputations
 needed to have consistent estimates of the standard error. To do so requires
 an estimate of the Fraction of Missing Information (FMI) which can only be
 obtained after running some number of imputations. Therefore, von Hippel
-(2018) recommends the following procedure:
+(2020) recommends the following procedure:
 
 \enumerate{
   \item Carry out a limited number of imputations to enable estimation of the
-  FMI. von Hippel (2018) recommends 20 imputations.
-  \item Use this function, \code{howManyImputations}, to calculate how many
+  FMI. von Hippel (2020) recommends 20 imputations.
+  \item Use this function, \code{how_many_imputations()}, to calculate how many
   total imputations you will need.
   \item If the number of total imputations you will need is larger than your
   initial batch of 20, run additional imputations.
@@ -65,5 +63,5 @@ modelfit2 <- with(impdata2, lm(Temp ~ Ozone + Solar.R + Wind))
 how_many_imputations(modelfit2)
 }
 \references{
-Von Hippel, Paul T. "How many imputations do you need? A two-stage calculation using a quadratic rule." Sociological Methods & Research 49.3 (2020): 699-718.
+von Hippel, Paul T. "How Many Imputations Do You Need? A Two-stage Calculation Using a Quadratic Rule." Sociological Methods & Research 49.3 (2020): 699-718.
 }
