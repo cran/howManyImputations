@@ -1,3 +1,12 @@
+# howManyImputations 0.2.5
+
+- No need to be so strict on name; `howManyImputations()` and
+  `how_many_imputations()` are aliases.
+- Switch from **testthat** to
+  [**tinytest**](https://CRAN.R-project.org/package=tinytest)
+- Confirmed [**Amelia**](https://CRAN.R-project.org/package=Amelia) is supported
+  by **howManyImputations**; added example to home page.
+
 # howManyImputations 0.2.4
 
 - Updated CITATION to use `bibentry()`.

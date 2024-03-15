@@ -1,10 +1,9 @@
-ee09e8d7147247847cf1dd779c29a305 *DESCRIPTION
+3c0809af3f0a7bb6977415daea537fc9 *DESCRIPTION
 14072c281dce4f1e07c87da1bbaae0c1 *LICENSE
 0bf41a1730c19ba762d00ca7b9a3eb6e *NAMESPACE
-5e2f37e402cf4073fc37b736a260b478 *NEWS.md
-4d87028d0145428301551fe46a4f9af8 *R/how_many_imputations.R
+824a0bc4a62fb4ca93f228f669b3acd5 *NEWS.md
+49fd07d60d67d5b2bb8477dfb898defe *R/how_many_imputations.R
 7439461f66cc66824eb641714e81be89 *inst/CITATION
-e17e60bf5508233ca2204d1dbe5b8dcd *man/howManyImputations.Rd
-6a914f0c0ded00ba0309109205603010 *man/how_many_imputations.Rd
-ebad4e6855cd05de68eabfd182d3cb68 *tests/testthat.R
-93f3d783799f55284661848a8ecf2d3b *tests/testthat/test-how_many_imputations.R
+01310855ac6a6a320e35abe6a4364729 *inst/tinytest/test-how_many_imputations.R
+797af306d39f2a9829576c67183f9b10 *man/how_many_imputations.Rd
+10b15930419fd138d58b96bfa67c2f90 *tests/tinytest.R
